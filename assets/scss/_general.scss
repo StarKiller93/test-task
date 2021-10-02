@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;0,700;1,400&display=swap");
+
+:root {
+  --primary-color: #ffde00;
+  --secondary-color: #ff885e;
+
+  --bg-gradient: linear-gradient(90deg, #8159c6 0%, #6c7cff 100%);
+  --seperator-gradient: linear-gradient(90deg, #ff9d66 0%, #ff7256 100%);
+  --hover-gradient: 0px 0px 30px rgba(255, 222, 0, 0.35),
+    inset 0px -2px 2px rgba(0, 0, 0, 0.25);
+
+  --polygon-shape: polygon(100% 0, 0 100%, 100% 100%);
+
+  --white: #fff;
+}
+
+/* Basic resets */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+/* Layout */
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.btn {
+  min-width: 16.1rem;
+  border: none;
+  background-color: #fff;
+  padding: 1.8rem 2.5rem;
+  display: inline-block;
+  border-radius: 4px;
+  color: #000000;
+  font-weight: 400;
+  font-size: 1.4rem;
+  cursor: pointer;
+  transition: 0.3s all;
+
+  &:hover {
+    background-color: var(--primary-color);
+  }
+}

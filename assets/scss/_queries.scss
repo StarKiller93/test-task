@@ -1,0 +1,152 @@
+// Below 1280px (Smaller desktops)
+@media (max-width: 80em) {
+  .main {
+    background-position: right -20% bottom 30%;
+
+    &__img {
+      max-width: 100%;
+    }
+  }
+
+  .header__list {
+    gap: 3rem;
+  }
+}
+
+// Below 992px (Tablets)
+@media (max-width: 62em) {
+  .header {
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: repeat(2, min-content);
+      row-gap: 2.5rem;
+    }
+
+    &__logo {
+      grid-column: 1/2;
+      grid-row: 1;
+    }
+
+    .btn {
+      grid-column: 2/3;
+      grid-row: 1;
+      justify-self: end;
+    }
+
+    &__list {
+      grid-column: 1/-1;
+      justify-content: space-around;
+    }
+  }
+
+  .main {
+    padding-bottom: 0rem;
+
+    &__left {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__heading {
+      max-width: 80%;
+      margin: 0 auto;
+      text-align: center;
+      &::before {
+        display: none;
+      }
+    }
+
+    &__body {
+      justify-content: space-around;
+      gap: auto;
+      width: 100%;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__right {
+      &::before {
+        display: none;
+      }
+    }
+  }
+}
+
+// Below 624px (Phone-Tablets Size)
+@media (max-width: 39em) {
+  .header {
+    &__list {
+      flex-wrap: wrap;
+    }
+
+    &__logo {
+      img {
+        max-width: 65%;
+      }
+    }
+
+    .btn {
+      min-width: 15.1rem;
+      height: 4rem;
+      padding: 1.2rem 1.5rem;
+      line-height: 1;
+    }
+  }
+
+  .main {
+    &::after {
+      height: 5rem;
+    }
+
+    &__left {
+      padding-top: 25.5rem;
+    }
+
+    &__heading {
+      font-size: 2.4rem;
+      max-width: 100%;
+    }
+
+    &__body {
+      flex-direction: column;
+    }
+
+    .container {
+      align-items: stretch;
+    }
+
+    &__right {
+      img {
+        position: absolute;
+        max-width: 60%;
+        right: -12rem;
+        bottom: -100%;
+      }
+    }
+
+    &__bullets-inner {
+      padding-left: 0.8rem;
+    }
+
+    &__price-list {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+      margin-bottom: 5.5rem;
+    }
+
+    &__btn {
+      align-self: center;
+    }
+  }
+
+  .container {
+    padding: 0 0.5rem;
+  }
+}
